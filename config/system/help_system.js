@@ -31,8 +31,8 @@ export const helpList = [{
     desc: '返回原神星铁签到地址'
   }, {
     icon: 71,
-    title: '体力过验证码',
-    desc: '遇到验证码返回验证码地址'
+    title: '#GT查看接口',
+    desc: '查看所有接口地址'
   }, {
     icon: 71,
     title: '#GT刷新验证',
@@ -48,7 +48,7 @@ export const helpList = [{
     desc: '更新GT插件'
   }, {
     icon: 85,
-    title: '#GT使用接口(1|2)',
+    title: '#GT使用接口(0|1|2|3|4|5)',
     desc: '切换第三方服务接口'
   }, {
     icon: 85,
