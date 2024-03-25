@@ -10,7 +10,7 @@ export class api extends plugin {
       priority: 33700,
       rule: [
         {
-          reg: /^#*(GT|gt)使用默认$/,
+          reg: /^#*(GT|gt)使用默认接口$/,
           fnc: "api0",
         },
         {
