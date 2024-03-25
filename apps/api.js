@@ -80,7 +80,7 @@ export class api extends plugin {
     if (!this.e.isMaster) return false;
     let config = yaml.load(fs.readFileSync(this.configPath, "utf8"));
     config.verifyAddr = "https://gt.161122.xyz/GTest/register";
-    config.signAddr = "ws://gt.yunzai.icu/mysSign";
+    config.signAddr = "ws://gt.161122.xyz/mysSign";
     fs.writeFileSync(this.configPath, yaml.dump(config));
     await this.reply("已将GT接口替换为接口4,请重启云崽后生效", true);
   }
