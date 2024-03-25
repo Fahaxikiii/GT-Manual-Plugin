@@ -10,7 +10,7 @@ export class api extends plugin {
       priority: 33700,
       rule: [
         {
-          reg: /^#*(GT|gt)使用默认接口$/,
+          reg: /^#*(GT|gt)使用接口0$/,
           fnc: "api0",
         },
         {
@@ -25,6 +25,14 @@ export class api extends plugin {
           reg: /^#*(GT|gt)使用接口3$/,
           fnc: "api3",
         },
+        {
+          reg: /^#*(GT|gt)使用接口4$/,
+          fnc: "api4",
+        },
+        {
+          reg: /^#*(GT|gt)使用接口5$/,
+          fnc: "api5",
+        },        
       ],
     });
 
@@ -38,7 +46,7 @@ export class api extends plugin {
     config.verifyAddr = "http://jn.031117.xyz:23333/GTest/register";
     config.signAddr = "ws://jn.031117.xyz:23333/mysSign";
     fs.writeFileSync(this.configPath, yaml.dump(config));
-    await this.reply("已将GT接口替换为默认接口，请重启云崽后生效", true);
+    await this.reply("已将GT接口替换为接口0，请重启云崽后生效", true);
   }
   
   async api1() {
